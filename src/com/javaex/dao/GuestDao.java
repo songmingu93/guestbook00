@@ -70,7 +70,7 @@ public class GuestDao {
 
 			pstmt = conn.prepareStatement(query); // 쿼리로 만들기
 
-			pstmt.int(1, personVo.getName()); // ?(물음표) 중 1번째, 순서중요
+			pstmt.int(1, personVo.getno()); // ?(물음표) 중 1번째, 순서중요
 			pstmt.setString(2, personVo.getname()); 
 			pstmt.setString(3, personVo.getpessword());
 			pstmt.setString(4, personVo.getcontent());
